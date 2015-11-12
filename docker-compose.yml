@@ -1,0 +1,13 @@
+django:
+  restart: always
+  build: ./django/
+  expose: 
+    - "8000"
+
+nginx:
+  restart: always
+  build: ./nginx/
+  ports:
+    - "80:80"
+  links:
+    - django:django 
