@@ -7,7 +7,7 @@ django:
     - postgres:postgres
   env_file: .env
   volumes:
-    - /root/docker-django/django:/user/src/app/:ro
+    - ./django:/user/src/app/:ro
 
 nginx:
   restart: always
