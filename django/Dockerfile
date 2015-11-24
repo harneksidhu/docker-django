@@ -2,7 +2,7 @@ FROM django:1.8.6
 
 EXPOSE 8000
 
-RUN mkdir -p /usr/src/app
+RUN mkdir -p /user/src/app
 
 COPY . /user/src/app
 
