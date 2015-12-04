@@ -1,13 +1,15 @@
 django:
   restart: always
   build: ./django/
+  ports:
+    - "8001:8001"
   expose: 
     - "8000"
   links:
     - postgres:postgres
   env_file: .env
   volumes:
-    - ./django:/user/src/app:ro
+    - ./django:/user/src/app
 
 nginx:
   restart: always
