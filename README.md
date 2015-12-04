@@ -51,4 +51,4 @@ Restore:
 
 * Create a seperate docker-compose file for production
 * Specify docker container names
-* Clean up rendundant data found in .env files
+* Clean up redundant data found in .env files
